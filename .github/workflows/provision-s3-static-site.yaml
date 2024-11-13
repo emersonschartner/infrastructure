@@ -2,9 +2,9 @@ name: Create S3 Static Site
 
 on:
   issues:
-    types:
+    type:
       - opened
-
+      
 jobs:
   deploy:
     runs-on: ubuntu-latest
