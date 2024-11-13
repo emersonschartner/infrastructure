@@ -3,8 +3,8 @@ name: Create S3 Static Site
 on:
   issues:
     type:
-      -opened
-
+      -open
+    
  jobs:
     deploy:
       runs-on: ubuntu-latest
