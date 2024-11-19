@@ -3,11 +3,11 @@ name: Create S3 Static Site
 on:
   issues:
     type:
-      - open
-
- jobs:
-    deploy:
-      runs-on: ubuntu-latest
+      - opened
+    
+    jobs:
+      deploy:
+        runs-on: ubuntu-latest
 
       steps:
         -name: Checkout repository
