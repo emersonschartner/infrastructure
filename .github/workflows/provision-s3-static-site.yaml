@@ -33,11 +33,4 @@ on:
           terraform init
           terraform apply -auto-approve -var="bucket_name=${{ env.BUCKET_NAME }}"
 
-        -name: Add Coment
-        run: gh issue comment "$NUMBER"  --repo "$REPO"  --body "$BODY"
-        env:
-          GITHUB_TOKEN: ${{ secrets.GH.TOKEN}} 
-          NUMBER: ${{ github.event.issue.number }} 
-          REPO: ${{ github.repository }}
-          BODY: >
-           Bucket S3 criado com sucesso!
+
