@@ -37,5 +37,4 @@ on:
           GITHUB_TOKEN: ${{ secrets.GH.TOKEN}} 
           NUMBER: ${{ github.event.issue.number }} 
           REPO: ${{ github.repository }}
-          BODY: >
-          Bucket S3 criado com sucesso!
+          BODY: >          Bucket S3 criado com sucesso!
